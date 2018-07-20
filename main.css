@@ -1,0 +1,514 @@
+                        @import url('https://fonts.googleapis.com/css?family=Josefin+Sans|Quicksand');
+                        * {
+                            margin: 0;
+                            padding: 0;
+                            color: #FFF;
+                            text-decoration: none;
+                        }
+                        
+                        body {
+                            background-color: black;
+                            color: white;
+                            font-family: 'Josefin Sans', sans-serif;
+                        }
+                        
+                        header {
+                            color: #FFF;
+                            background-color: black;
+                            padding: 1%;
+                            font-family: 'Josefin Sans', sans-serif;
+                            align-items: flex-end;
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: space-between;
+                            align-items: center;
+                            align-content: center;
+                        }
+                        
+                        .icon {
+                            width: 25px;
+                            padding: 10px;
+                            line-height: 50px;
+                            background: black;
+                            color: white;
+                            cursor: pointer;
+                            text-align: center;
+                            justify-content: center;
+                        }
+                        
+                        .top-right {
+                            display: flex;
+                            align-items: center;
+                            align-content: center;
+                            justify-content: space-between;
+                        }
+                        
+                        .top-right a {
+                            margin: 15px;
+                            text-decoration: none;
+                            color: #FFF;
+                        }
+                        
+                        .top-right a:hover,
+                        a:focus {
+                            color: orangered;
+                        }
+                        
+                        label {
+                            display: block;
+                            cursor: pointer;
+                            margin: 0 20px 0 0;
+                            font-size: 26px;
+                            line-height: auto;
+                            color: #f84200;
+                        }
+                        
+                        label:hover,
+                        label:focus {
+                            color: #FFF;
+                        }
+                        
+                        #toggle {
+                            display: none;
+                        }
+                        
+                        .menu {
+                            text-align: center;
+                            width: 15%;
+                            display: none;
+                            background: black;
+                            right: 0;
+                            color: white;
+                            position: absolute;
+                            padding: 5px 5px;
+                            z-index: 1;
+                        }
+                        
+                        @media only screen and (max-width:600px) {
+                            header {
+                                font-size: 15px;
+                            }
+                            .menu {
+                                right: 0px;
+                                width: 100%;
+                                padding: 1px 1px;
+                            }
+                            .menu a {
+                                padding: 5px 10px;
+                                position: relative;
+                            }
+                            .grid {
+                                display: flex;
+                                flex-wrap: wrap;
+                                flex: 100%;
+                                max-width: 100%;
+                                height: 100%;
+                            }
+                        }
+                        
+                        .menu a {
+                            display: block;
+                            border-bottom: 1px solid #f84200;
+                            margin: 0;
+                            padding: 25px 50px;
+                            color: #FFF;
+                        }
+                        
+                        .menu a:hover {
+                            background: #f84200;
+                            color: black;
+                        }
+                        
+                        #toggle:hover+.menu {
+                            display: block;
+                        }
+                        /* #toggle:hover+.menu a {
+    display: block;
+} */
+                        
+                        #toggle:checked+.menu {
+                            display: block;
+                        }
+                        /* first */
+                        
+                        .first {
+                            background-image: url(first.jpg);
+                            display: flex;
+                            flex-direction: column;
+                            align-content: center;
+                            align-items: center;
+                            justify-content: space-around;
+                        }
+                        
+                        button {
+                            background: black;
+                            color: #FFF;
+                            padding-top: 15px;
+                            padding-left: 25px;
+                            padding-right: 25px;
+                            padding-bottom: 15px;
+                            border-radius: 35px;
+                            text-align: center;
+                            text-decoration: none;
+                            text-transform: uppercase;
+                            cursor: pointer;
+                            transition-duration: .4s;
+                            box-shadow: 0px 0px 75px 15px white;
+                        }
+                        
+                        button:hover,
+                        button:focus {
+                            opacity: .8;
+                            color: grey;
+                        }
+                        
+                        .spc {
+                            height: 50px;
+                        }
+                        
+                        .service {
+                            background: black;
+                            display: flex;
+                            flex-direction: column;
+                            align-content: center;
+                            align-items: center;
+                            justify-content: space-around;
+                            height: 300px;
+                        }
+                        
+                        .service h6 {
+                            text-transform: uppercase;
+                        }
+                        
+                        .service p {
+                            text-align: center;
+                        }
+                        
+                        .orange {
+                            color: orangered;
+                        }
+                        
+                        .grid {
+                            display: flex;
+                            display: -webkit-flex;
+                            flex-direction: row;
+                            padding: 0;
+                            height: 350px;
+                            background: #f84200;
+                            opacity: .9;
+                        }
+                        
+                        .grid h5 {
+                            padding: 20px;
+                            opacity: 1.5;
+                        }
+                        
+                        #g0:hover {
+                            background: rgb(136, 240, 217);
+                        }
+                        
+                        #g1:hover {
+                            background: rgb(120, 198, 181);
+                        }
+                        
+                        #g2:hover {
+                            background: rgb(120, 198, 181)
+                        }
+                        
+                        #g3:hover {
+                            background: rgb(120, 198, 181)
+                        }
+                        
+                        #g0 {
+                            background: url(p1.jpg);
+                            background-repeat: no-repeat;
+                            background-size: auto;
+                            background-position: center;
+                            opacity: 0.7;
+                            width: 100%;
+                            height: 100%;
+                        }
+                        
+                        #g1 {
+                            background: url(p4.jpg);
+                            background-repeat: no-repeat;
+                            /* background-attachment: fixed; */
+                            background-size: auto;
+                            background-position: top;
+                            opacity: 0.7;
+                            width: 100%;
+                        }
+                        
+                        #g2 {
+                            background: url(p3.jpg);
+                            background-repeat: no-repeat;
+                            /* background-attachment: fixed; */
+                            background-size: auto;
+                            background-position: center;
+                            opacity: 0.7;
+                            width: 100%;
+                        }
+                        
+                        #g3 {
+                            background: url(p4.jpg);
+                            background-repeat: no-repeat;
+                            background-size: auto;
+                            background-position: center;
+                            opacity: 0.7;
+                            width: 100%;
+                        }
+                        
+                        .grid img {
+                            height: 25%;
+                            width: 25%;
+                        }
+                        
+                        .choose {
+                            background-image: url(second.png);
+                            background-color: black;
+                            display: flex;
+                            flex-direction: column;
+                            align-content: center;
+                            align-items: center;
+                            justify-content: space-around;
+                        }
+                        
+                        .grid1x2 {
+                            display: grid;
+                            grid-template-columns: auto auto;
+                            width: 100%;
+                            height: 100%;
+                        }
+                        
+                        .fg1 {
+                            background-color: black;
+                            opacity: .8;
+                            background-image: url(g20.jpg);
+                            background-position: center;
+                            padding: 20px;
+                            height: auto;
+                        }
+                        
+                        .fg4 {
+                            background: #FFF;
+                            display: grid;
+                            grid-template-columns: auto auto;
+                        }
+                        
+                        .fg4 img {
+                            height: 50%;
+                            width: 100%;
+                        }
+                        
+                        .ideology {
+                            display: grid;
+                            grid-template-columns: auto auto;
+                            width: 100%;
+                        }
+                        
+                        .ideo1 {
+                            padding-left: 100px;
+                            width: 100%;
+                        }
+                        
+                        .ideo2 {
+                            align-content: center;
+                            width: 100%;
+                        }
+                        
+                        .selected-works {
+                            display: flex;
+                            flex-direction: column;
+                            background: black;
+                            color: white;
+                            text-decoration: none;
+                            justify-content: center;
+                            padding-top: -550px;
+                            margin-left: 90px;
+                            color: #FFF;
+                        }
+                        
+                        .img-yell {
+                            padding: 10px;
+                            margin: 250px;
+                            margin-right: 15px;
+                            display: block;
+                            width: 350px;
+                            height: 250px;
+                            box-shadow: -50px -50px yellow;
+                        }
+                        
+                        .sel_img {
+                            display: grid;
+                            grid-template-columns: auto auto auto;
+                            grid-gap: 10px;
+                            justify-content: center;
+                            text-decoration: none;
+                            color: #FFF;
+                        }
+                        
+                        .sel_img img {
+                            height: 150px;
+                            width: 200px;
+                        }
+                        
+                        .clients {
+                            padding-left: 150px;
+                            color: #FFF;
+                        }
+                        
+                        .cl_img {
+                            display: grid;
+                            grid-template-columns: auto auto auto auto auto;
+                            grid-gap: 25px;
+                        }
+                        
+                        .cl_img img {
+                            height: 40px;
+                            width: 80px;
+                        }
+                        
+                        .thoughts_grid {
+                            display: flex;
+                            flex-direction: column;
+                            align-content: center;
+                            align-items: center;
+                            justify-content: space-around;
+                            background: rgb(16, 16, 16);
+                            color: #FFF;
+                        }
+                        
+                        .more:hover {
+                            color: orangered;
+                        }
+                        
+                        .exp_img {
+                            display: grid;
+                            grid-template-columns: auto auto auto auto auto;
+                            grid-gap: 15px;
+                        }
+                        
+                        .exp-txt img {
+                            height: 150px;
+                            width: 200px;
+                        }
+                        
+                        .exp-txt {
+                            display: grid;
+                            grid-template-columns: auto auto auto auto auto;
+                            grid-gap: 15px;
+                            color: #FFF;
+                        }
+                        
+                        .design {
+                            display: flex;
+                            flex-direction: column;
+                            align-content: center;
+                            align-items: center;
+                            justify-content: space-around;
+                            background: black;
+                            font-size: auto;
+                            color: #FFF;
+                        }
+                        
+                        .foot-nav {
+                            background: black;
+                            display: flex;
+                            align-items: stretch;
+                            text-decoration: none;
+                            border-top: 1px solid grey;
+                        }
+                        
+                        .foot-nav .social {
+                            display: flex;
+                            align-items: stretch;
+                            margin-right: 600px;
+                            margin-left: 100px;
+                        }
+                        
+                        .foot-nav .sub {
+                            padding: 5px;
+                        }
+                        
+                        .sub a:hover {
+                            color: darkorange;
+                        }
+                        
+                        .social a {
+                            display: flex;
+                            border: 1px solid grey;
+                            align-items: center;
+                            padding-top: 4px;
+                            padding-bottom: 4px;
+                            padding-left: 0;
+                            padding-right: 0;
+                        }
+                        
+                        .logo-foot {
+                            padding: 20px;
+                        }
+                        
+                        .social a:hover {
+                            color: darkorange;
+                            border: 1px solid darkorange;
+                        }
+                        
+                        .slider {
+                            background: rgb(43, 43, 43);
+                            padding-left: 100px;
+                            padding-right: 100px;
+                        }
+                        
+                        .foot {
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: space-between;
+                            align-items: center;
+                            align-content: center;
+                        }
+                        
+                        .lmenu {
+                            display: flex;
+                            flex-direction: row;
+                        }
+                        
+                        .lmenu a {
+                            margin: 8px;
+                        }
+                        
+                        .lmenu a:hover {
+                            color: darkorange;
+                        }
+                        /* #slides {
+                            position: relative;
+                            height: 150px;
+                            padding: 0px;
+                            margin: 0px;
+                            list-style-type: none;
+                        } */
+                        /* .slide {
+                            position: absolute;
+                            left: 0px;
+                            top: 0px;
+                            width: 100%;
+                            height: 100%;
+                            opacity: 0;
+                            z-index: 1;
+                            -webkit-transition: opacity 1s;
+                            -moz-transition: opacity 1s;
+                            -o-transition: opacity 1s;
+                            transition: opacity 1s;
+                        }
+                         */
+                        
+                        .showing {
+                            opacity: 1;
+                            z-index: 2;
+                        }
+                        /* .slide {
+                            font-size: 40px;
+                            padding: 40px;
+                            box-sizing: border-box;
+                            background: #333;
+                            color: #fff;
+                        } */
