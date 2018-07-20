@@ -161,9 +161,9 @@
             <div class="spc"></div>
             filter by
             <select name="" id="filter">
-                <option value="All">All</option>
-                <option value="Type1">Type1</option>
-                <option value="Type2">Type2</option>
+                <option value="All" onclick="filterSelection('all')">All</option>
+                <option value="Type1" onclick="filterSelection('type1')">Type1</option>
+                <option value="Type2" onclick="filterSelection('type2')">Type2</option>
             </select>
 
 
@@ -171,15 +171,15 @@
             <div class="spc"></div>
         </section>
         <section class="sel_img">
-            <img src="g91.jpg" alt="1" class="works">
-            <img src="g92.jpg" alt="2" class="works">
-            <img src="g93.jpg" alt="3" class="works">
-            <img src="g94.jpg" alt="4" class="works">
-            <img src="g95.jpg" alt="5" class="works">
-            <img src="g91.jpg" alt="6" class="works">
-            <img src="g97.jpg" alt="7" class="works">
-            <img src="g98.jpg" alt="8" class="works">
-            <img src="g99.jpg" alt="9" class="works">
+            <img src="g91.jpg" alt="1" class="filterImg Type1">
+            <img src="g92.jpg" alt="2" class="filterImg Type2">
+            <img src="g93.jpg" alt="3" class="filterImg Type2">
+            <img src="g94.jpg" alt="4" class="filterImg Type1">
+            <img src="g95.jpg" alt="5" class="filterImg Type1">
+            <img src="g91.jpg" alt="6" class="filterImg Type2">
+            <img src="g97.jpg" alt="7" class="filterImg Type2">
+            <img src="g98.jpg" alt="8" class="filterImg Type1">
+            <img src="g99.jpg" alt="9" class="filterImg Type2">
 
             <div class="spc"></div>
             <span class="more"> <h6>Load more...</h6></span>
@@ -297,20 +297,7 @@
         <section class="slider">
             <div class="spc"></div>
 
-            <div id="slides">
 
-
-                <div id="slide showing">
-                    <p>“Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
-                    <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
-                    <p> when an unknown”</p>
-                    <div class="spc"></div>
-
-                    <p>- John Doe CEO at Uber</p>
-
-
-                </div>
-            </div>
 
             <div class="slide">
                 <p>“Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
@@ -318,7 +305,7 @@
                 <p> when an unknown”</p>
                 <div class="spc"></div>
 
-                <p>- John Doe CEO at x-Uber</p>
+                <p>- John Doe CEO at Uber</p>
 
 
             </div>
@@ -329,7 +316,17 @@
                 <p> when an unknown”</p>
                 <div class="spc"></div>
 
-                <p>- John Doe CEO at cUber</p>
+                <p>- John Doe CEO at Microsoft</p>
+
+
+            </div>
+            <div class="slide">
+                <p>“Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                <p> when an unknown”</p>
+                <div class="spc"></div>
+
+                <p>- John Doe CEO at Google</p>
 
 
             </div>
@@ -339,8 +336,6 @@
             <a class="icon" onclick="getdiv(1)">&#10095</a>
             </div>
             </div>
-
-
 
 
 
