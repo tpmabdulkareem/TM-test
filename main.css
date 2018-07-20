@@ -162,6 +162,15 @@
                             color: grey;
                         }
                         
+                        #filter {
+                            color: orangered;
+                            background: black;
+                        }
+                        
+                        #filter option {
+                            color: #f84200;
+                        }
+                        
                         .spc {
                             height: 50px;
                         }
